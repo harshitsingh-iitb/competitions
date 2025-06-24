@@ -147,7 +147,7 @@ const Footer = () => {
 };
 
 // Main App Component
-const App = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
@@ -155,7 +155,7 @@ const App = () => {
       <CompetitionListing />
       <Footer />
       
-      <style jsx>{`
+      <style>{`
         @keyframes fade-in-up {
           from {
             opacity: 0;
@@ -180,4 +180,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

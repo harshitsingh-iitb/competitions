@@ -5,6 +5,7 @@ import CompetitionShowcase from './compPageNew';
 
 
 export default function CompPage() {
+  console.log("CompPage loaded");
   const { slug } = useParams();
   const competition = competitions.find((c) => c.slug === slug);
   console.log("slug from URL:", slug);

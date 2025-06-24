@@ -11,7 +11,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://harshitsingh-iitb.github.io/competitions",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
     "lucide-react": "^0.522.0",

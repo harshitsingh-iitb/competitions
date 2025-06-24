@@ -10,7 +10,7 @@ function App() {
       <ScrollToTop />
       {/* Main App Structure */}
       <Routes>
-        <Route path="/competitions" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/competitions/:slug" element={<CompPage />} />
       </Routes>
     </Router>

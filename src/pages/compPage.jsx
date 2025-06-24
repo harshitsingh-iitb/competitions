@@ -4,9 +4,11 @@ import competitions from '../data/competitions-list'; // Competitions data impor
 import CompetitionShowcase from './compPageNew';
 
 
-export default function CompetitionDetails() {
+export default function CompPage() {
   const { slug } = useParams();
   const competition = competitions.find((c) => c.slug === slug);
+  console.log("slug from URL:", slug);
+console.log("All slugs in data:", competitions.map(c => c.slug));
   console.log(competition);
   console.log(Array.isArray(competition)); // should be true
 console.log(competition); // see what it actually is
@@ -17,7 +19,6 @@ console.log(competition); // see what it actually is
 
   return (
     <div> 
-        <h1> Hello </h1>
 <CompetitionShowcase competition={competition}></CompetitionShowcase>
 </div>
   );

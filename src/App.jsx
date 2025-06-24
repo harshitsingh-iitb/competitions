@@ -11,7 +11,7 @@ function App() {
       {/* Main App Structure */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/competitions/:slug" element={<CompPage />} />
+        <Route path="/:slug" element={<CompPage />} />
       </Routes>
     </Router>
   );

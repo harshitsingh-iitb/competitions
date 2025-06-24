@@ -84,7 +84,7 @@ const CompetitionCard = ({ competition }) => {
           <Calendar className="w-4 h-4 mr-2" />
           <span>{competition.deadline}</span>
         </div>
-        <a href={`/competitions/${competition.slug}`}>
+        <a href={`/${competition.slug}`}>
         <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-200 hover:shadow-lg transform hover:scale-105">
           View Details
         </button>

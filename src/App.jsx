@@ -1,11 +1,14 @@
 // App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import CompPage from './pages/compPage';
+import ScrollToTop from "./components/toTop"; 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+      {/* Main App Structure */}
       <Routes>
         <Route path="/competitions" element={<Home />} />
         <Route path="/competitions/:slug" element={<CompPage />} />

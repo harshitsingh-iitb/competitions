@@ -117,7 +117,7 @@ export default function CompetitionShowcase({ competition }) {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 <p className="text-purple-300 font-semibold mb-2">Final Submission Date</p>
                 <p   className="text-3xl font-bold text-white mb-2">{competition.deadline}</p>
-                <p className="text-gray-300">11:59 PM PST</p>
+                <p className="text-gray-300">11:59 PM IST</p>
               </div>
               <div className="text-gray-300 space-y-2">
                 <p>• Late submissions will not be accepted</p>
@@ -146,9 +146,6 @@ export default function CompetitionShowcase({ competition }) {
       <footer className="bg-gradient-to-r from-gray-900 to-black text-white py-12 mt-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="mb-6">
-            <h4   className="text-2xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-purple-300 bg-clip-text text-transparent">
-              {competition.name}
-            </h4>
           </div>
           <div className="border-t border-gray-800 pt-6">
           </div>

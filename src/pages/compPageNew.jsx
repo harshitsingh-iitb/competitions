@@ -13,14 +13,19 @@ export default function CompetitionShowcase({ competition }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-200">
-        <div className="max-w-6xl mx-auto px-4 py-3">
+      <nav className="relative top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-200">
+  <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    {/* Left Side - Home Button */}
+    <a href="/">
+      <HomeButton />
+    </a>
 
-          <a href="/">
-          <HomeButton />
-          </a>
-        </div>
-      </nav>
+    {/* Right Side - Leaderboard */}
+    <a href="/leaderboard" className="text-purple-700 hover:text-purple-900 font-semibold">
+      Leaderboard
+    </a>
+  </div>
+</nav>
 
       {/* Hero Section */}
       <header className="pt-24 pb-12 px-4">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Home, Calendar, Target, FileText, Upload, Award , ArrowUp} from 'lucide-react';
 import HomeButton from '../components/homebutton';
 const Navbar = () => {
@@ -6,11 +6,15 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
+          <div className="flex items-baseline">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Operation Zero
             </h1>
+            <span className="inline-flex items-centre px-2 py-1 text-xs font-medium text-orange-800 bg-orange-100 rounded-full border border-orange-200">
+           BETA
+            </span>
           </div>
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a href="/" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
@@ -35,7 +39,7 @@ const Navbar = () => {
 };
 export default function CompetitionShowcase({ competition }) {
   const handleClick = () => {
-    const confirmed = window.confirm("Submissions will start 4th July 2025");
+    const confirmed = window.confirm("Submissions will start 1st July 2025 5PM IST.");
     if (confirmed) {
       console.log("User confirmed");
     } else {
@@ -156,11 +160,16 @@ export default function CompetitionShowcase({ competition }) {
               </div>
               <h3 className="text-2xl font-bold">Submit Your Entry</h3>
             </div>
+            <div id="submission-status">
+    Submission starts in <span id="countdown"></span>
+  </div>
+            <div id="submission-link">
             <a   href={competition.submitLink}>
             <button onClick={handleClick} className="w-full bg-white text-purple-700 font-bold py-4 px-8 rounded-2xl hover:bg-purple-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl mb-4">
               Submit Here
             </button>
             </a>
+            </div>
           </section>
         </div>
       </main>

@@ -161,9 +161,9 @@ export default function CompetitionShowcase({ competition }) {
               <h3 className="text-2xl font-bold">Submit Your Entry</h3>
             </div>
             <div id="submission-status">
-    Submission starts in <span id="countdown"></span>
+    Login With Your LDAP ID to submit the form.
   </div>
-            <div id="submission-link">
+            <div id="submission-link" className='pt-5'>
             <a   href={competition.submitLink}>
             <button onClick={handleClick} className="w-full bg-white text-purple-700 font-bold py-4 px-8 rounded-2xl hover:bg-purple-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl mb-4">
               Submit Here

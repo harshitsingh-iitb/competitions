@@ -117,7 +117,9 @@ const CompetitionListing = () => {
             Choose your battleground. Each competition offers unique challenges and substantial rewards for the victorious.
           </p>
         </div>
-        
+        <div className="mb-8 ">
+        <p className='text-red-500'>Note: </p> <p>You can submit in teams, but remember every Team Member has to make the submission with the same Team Name.</p>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {competitions.map((competition, index) => (
             <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>

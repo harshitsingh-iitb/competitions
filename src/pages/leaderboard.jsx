@@ -82,7 +82,7 @@ const Leaderboard = () => {
         </div>
         <h1 className="text-black font-bold text-xl">
       <Typewriter
-        words={['The Leaderboard is currently empty. It will be updated starting 4th July. Check back later for updates!']}
+        words={['The Leaderboard is currently empty. It will be updated starting 2nd July. Check back later for updates!']}
         loop={1}             
 
         typeSpeed={50}

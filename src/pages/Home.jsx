@@ -53,10 +53,12 @@ const HeroSection = () => {
               Competitions
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto font-bold">
             9 elite challenges. One mission: win.
             <br />
-            Perform Extraordinary and you will be approached.
+            What you submit determines what happens next. 
+            <br />
+            Nothing else matters.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center text-gray-500">
@@ -138,16 +140,17 @@ const Footer = () => {
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
               Operation Zero
             </h3>
-            <p className="text-gray-400 max-w-md mx-auto">
-              Connecting elite minds through high-stakes competitions that push the boundaries of innovation.
+            <p className="text-gray-400  mx-auto">
+            Observe. Execute. Rise.
               <br />
-              Perform Your Best and you will be contacted.
+              Some will finish. A few will be chosen. Most will never be spoken to.
+              <br />
             </p>
           </div>
           
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-400 text-sm">
-             Made with ❤️ by the Harshit Singh Bhandari for IIT Bombay 
+            Deployed inside IIT Bombay. Purpose: Classification.
             </p>
           </div>
         </div>

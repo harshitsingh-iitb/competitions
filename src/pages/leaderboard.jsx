@@ -252,9 +252,29 @@ const Leaderboard = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-8 text-gray-500 text-sm">
-          <p>Leaderboard updates once every 24 Hours</p>
+        <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center">
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+              Operation Zero
+            </h3>
+            <p className="text-gray-400  mx-auto">
+            Observe. Execute. Rise.
+              <br />
+              Some will finish. A few will be chosen. Most will never be spoken to.
+              <br />
+            </p>
+          </div>
+          
+          <div className="border-t border-gray-800 pt-8">
+            <p className="text-gray-400 text-sm">
+            Deployed inside IIT Bombay. Purpose: Classification.
+            </p>
+          </div>
         </div>
+      </div>
+    </footer>
       </div>
     </div>
   );

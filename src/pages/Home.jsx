@@ -52,6 +52,8 @@ const HeroSection = () => {
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
             9 elite challenges. One mission: win.
+            <br />
+            Perform Extraordinary and you will be approached.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center text-gray-500">
@@ -135,6 +137,8 @@ const Footer = () => {
             </h3>
             <p className="text-gray-400 max-w-md mx-auto">
               Connecting elite minds through high-stakes competitions that push the boundaries of innovation.
+              <br />
+              Perform Your Best and you will be contacted.
             </p>
           </div>
           

@@ -7,7 +7,7 @@ const competitions = [
     "goals": "This challenge teaches participants how to build a cohesive, premium brand from the ground up. By developing everything from the name and logo to the story and promotional materials, they learn to combine creative design with strategic thinking. It sharpens their skills in branding, storytelling, and visual communication—preparing them to craft brands that are both visually compelling and market-ready.",
     "submitLink": "",
     "brief": "Create a ready-to-launch brand from scratch including promotional asset.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "A Drive Link with all brand assets, including: Brand name, Logo, Tagline, Brand story, Promotional materials (ads, social media graphics, packaging mockups)"
   },
   {
@@ -18,7 +18,7 @@ const competitions = [
     "goals": "This challenge trains participants to think like business strategists. By breaking down the core mechanics of a successful company, they learn how to analyze business models, identify growth levers, and communicate complex ideas simply and effectively. It builds strategic thinking, research skills, and the ability to translate high-level concepts into clear, concise narratives—valuable for anyone interested in startups, business, or marketing.",
     "submitLink": "",
     "brief": "Reverse-engineer a unicorn’s business into a single slide and explain it to a 15-year-old.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "A Drive Link with the following: 1-slide summary, 3-minute explainer video, Key insights and takeaways",
   },
   {
@@ -29,7 +29,7 @@ const competitions = [
     "goals": "This challenge helps participants develop a maker’s mindset by identifying inefficiencies in their own routines and building practical solutions to eliminate them. It sharpens problem-solving, automation, and technical documentation skills, while reinforcing the value of time-saving systems. Most importantly, it encourages thinking in terms of leverage—how to get more done by designing tools that work for you.",
     "submitLink": "",
     "brief": "Build an automation that eliminates 10 hours/week from your life.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "Drive Link with: Demo video of before/after, Documentation of the tool/system, Explanation of time saved and impact, Link to Github Repository or live tool",
   },
   {
@@ -40,7 +40,7 @@ const competitions = [
     "goals": "This challenge strengthens the ability to think lean and build fast. Participants learn how to identify everyday pain points and address them with lightweight, efficient code. It promotes clarity in both thinking and execution, enhances rapid prototyping skills, and encourages a strong focus on delivering value with minimal complexity.",
     "submitLink": "",
     "brief": "Create and publish 5 ultra-small projects solving real problems with <100 lines of code each.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "Public GitHub repo or site, One-liner explanation per project, Demos/live links"
   },
   {
@@ -51,7 +51,7 @@ const competitions = [
     "goals": "This challenge builds the muscle of rapid execution and shipping under pressure. Participants learn to overcome perfectionism, make fast decisions, and focus on delivering value over polishing indefinitely. It cultivates a bias for action, reinforces the importance of momentum, and proves that meaningful work can be created and launched in less time than most people think.",
     "submitLink": "",
     "brief": "Ship a real, live product/tool/resource that solves a problem or shares deep insight.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "Live link, Demo or screenshots, Context or write-up"
   },
   {
@@ -62,7 +62,7 @@ const competitions = [
     "goals": "This challenge teaches participants how to validate ideas through action, not assumptions. It builds skills in cold outreach, copywriting, and early customer discovery—showing how to gauge real interest without relying on paid ads or personal connections. Most importantly, it reinforces the principle that true validation comes from strangers who care, not friends who support.",
     "submitLink": "",
     "brief": "Build a landing page for a product and get 10+ cold users to interact—with zero ad spend.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "Landing page, Engagement proof, Outreach doc/log"
   },
   {
@@ -73,7 +73,7 @@ const competitions = [
     "goals": "Attendees will learn to simplify complex ideas into clear, elegant visuals or animations, improving their skills in storytelling, design clarity, and audience engagement—ensuring their message is instantly understood by people of all ages.",
     "submitLink": "",
     "brief": "Turn a complex idea into a crystal-clear visual. Must teach, not just look pretty.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "Visual asset, Caption, Supporting explanation"
   },
   {
@@ -84,7 +84,7 @@ const competitions = [
     "goals": "Produce original, investment-grade insight, Back with logic and data, Design it for clarity and decision-use",
     "submitLink": "",
     "brief": "Build and publish one investment-grade insight product—deck, PDF, or Notion.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "PDF/Notion/Deck link, Summary bullets, Visuals or models used"
   },
   {
@@ -95,7 +95,7 @@ const competitions = [
     "goals": "Attendees will learn to critically analyze existing processes, apply systems thinking, and design thoughtful improvements. They’ll develop skills in visual communication, problem-solving, and articulating the reasoning behind strategic changes for real-world impact.",
     "submitLink": "",
     "brief": "Redesign a broken user journey or system—show before/after and explain the why.",
-    "deadline": "30th June 2025",
+    "deadline": "7th July 2025",
     "output": "Problem map, Redesign diagram, Explanation of solution logic"
   }
 ];

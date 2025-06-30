@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Trophy, Medal, Award, Users, Calendar, Target } from 'lucide-react';
-import competitions from '../data/competitions-list'; // Competitions data import
-import mockLeaderboardData from '../data/data'; // Mock leaderboard data import
+import competitions from '../data/competitions-list'; 
+import mockLeaderboardData from '../data/data'; 
+import { Typewriter } from 'react-simple-typewriter';
 
-// Mock leaderboard data - replace with your actual data
 const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-100">
@@ -64,7 +64,30 @@ const Leaderboard = () => {
   };
 
   const selectedChallengeInfo = competitions.find(comp => comp.slug === selectedChallenge);
+  if (mockLeaderboardData.length === 0) {
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-4">
+           <Navbar />
+           <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Challenge Leaderboard</h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Track your performance across all challenges and see how you rank against other participants
+          </p>
+        </div>
+        <h1 className="text-black font-bold text-xl">
+      <Typewriter
+        words={['The Leaderboard is currently empty. It will be updated starting 4th July. Check back later for updates!']}
+        loop={1}             
 
+        typeSpeed={50}
+        deleteSpeed={0}      
+        delaySpeed={0}       
+      />
+    </h1>
+        </div>
+        
+      );
+  } else {
   return (
     
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-4">
@@ -229,6 +252,6 @@ const Leaderboard = () => {
       </div>
     </div>
   );
-};
+}};
 
 export default Leaderboard;

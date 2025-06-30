@@ -3,7 +3,7 @@ import { Home, Calendar, Target, FileText, Upload, Award , ArrowUp} from 'lucide
 import HomeButton from '../components/homebutton';
 export default function CompetitionShowcase({ competition }) {
   const handleClick = () => {
-    const confirmed = window.confirm("Submissions will start 27th June 2025");
+    const confirmed = window.confirm("Submissions will start 4th July 2025");
     if (confirmed) {
       console.log("User confirmed");
     } else {
@@ -100,10 +100,8 @@ export default function CompetitionShowcase({ competition }) {
               </div>
               <h2 className="text-3xl font-bold text-gray-800">Expected Output</h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border border-purple-100">
+            <div className=" md:grid-cols-3 gap-6">
                 <p   className="text-gray-700">{competition.output}</p>
-              </div>
             </div>
           </div>
         </section>
@@ -157,6 +155,8 @@ export default function CompetitionShowcase({ competition }) {
             </h3>
             <p className="text-gray-400 max-w-md mx-auto">
               Connecting elite minds through high-stakes competitions that push the boundaries of innovation.
+              <br />
+              Perform Extraordinary you will be approached.
             </p>
           </div>
           

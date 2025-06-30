@@ -68,7 +68,7 @@ const Leaderboard = () => {
       return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-4">
            <Navbar />
-           <div className="text-center mb-8">
+           <div className="text-center mb-8 mt-20">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Challenge Leaderboard</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Track your performance across all challenges and see how you rank against other participants
@@ -94,7 +94,7 @@ const Leaderboard = () => {
       <Navbar />
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 mt-20">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Challenge Leaderboard</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Track your performance across all challenges and see how you rank against other participants

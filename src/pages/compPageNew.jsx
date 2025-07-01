@@ -39,12 +39,7 @@ const Navbar = () => {
 };
 export default function CompetitionShowcase({ competition }) {
   const handleClick = () => {
-    const confirmed = window.confirm("Submissions will start 1st July 2025 5PM IST.");
-    if (confirmed) {
-      console.log("User confirmed");
-    } else {
-      console.log("User canceled");
-    }
+    window.open("https://forms.gle/smbwab1tpmZUfHpw6", "_blank");
 }
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">

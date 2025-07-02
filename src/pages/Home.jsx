@@ -48,9 +48,9 @@ const HeroSection = () => {
       <div className="relative max-w-4xl mx-auto text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Discover High-Stakes
+            Discover Real World 
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Competitions
+              Challenges
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto font-bold">
@@ -58,7 +58,9 @@ const HeroSection = () => {
             <br />
             What you submit determines what happens next. 
             <br />
-            Nothing else matters.
+            You think you’ve got founder DNA?
+            <br />
+            Let’s see if it survives real execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center text-gray-500">

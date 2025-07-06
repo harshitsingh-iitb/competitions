@@ -6,6 +6,7 @@ import ScrollToTop from "./components/toTop";
 import Leaderboard from './pages/leaderboard';
 import NotLive from './pages/notLive';
 import NotFound from './pages/notFound';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const isLive = false; 
 function App() {
   return (

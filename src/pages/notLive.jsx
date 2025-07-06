@@ -9,7 +9,8 @@ const NotLive = () => {
         <div className="flex flex-col items-center justify-center pt-24">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Competition Not Live</h1>
             <p className="text-lg text-gray-600 mb-8">
-            This competition is not currently live. Please check back later for updates.
+            This competition is not currently live. <br />
+            Next competition will be live on 20th July 2025.
             </p>
 
         </div>

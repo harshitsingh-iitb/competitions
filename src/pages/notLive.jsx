@@ -5,7 +5,7 @@ import BlurText from '../components/BlurText';
 import ShinyText from '../components/ShinyText';
 
 
-const NotLive = (message) => {
+const NotLive = ({ message }) => {
     const handleAnimationComplete = () => {
         console.log('Animation completed!');
       };

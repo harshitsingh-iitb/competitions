@@ -16,7 +16,7 @@ fetch("https://comp-0al6.onrender.com/status")
   .then(data => {
     console.log(data); 
   });
-  const isLive = data.isLive;
+  const isLive = data.is_live;
   console.log("Is live status:", isLive); 
   return (
     <Router>

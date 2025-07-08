@@ -5,7 +5,7 @@ import BlurText from '../components/BlurText';
 import ShinyText from '../components/ShinyText';
 
 
-const NotLive = () => {
+const NotLive = (message) => {
     const handleAnimationComplete = () => {
         console.log('Animation completed!');
       };
@@ -23,7 +23,7 @@ const NotLive = () => {
                 className="text-4xl md:text-6xl mb-8"/>
             </h1>
             <h1 className="text-lg text-black mb-8">
-            <ShinyText text="Competitions Will be Live 20th July" disabled={false} speed={3}/>
+            <ShinyText text={message} disabled={false} speed={3}/>
             </h1>
 
         </div>

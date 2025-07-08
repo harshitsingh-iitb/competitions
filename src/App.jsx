@@ -8,7 +8,8 @@ import NotLive from './pages/notLive';
 import NotFound from './pages/notFound';
 
 
-const isLive = false; 
+const isLive = false;
+const message = "Competitions will be live soon!";
 function App() {
   // fetch("https://my-backend.onrender.com/status")
 fetch("https://comp-0al6.onrender.com/status")
@@ -17,6 +18,10 @@ fetch("https://comp-0al6.onrender.com/status")
   console.log(data); // { days_left: 11, is_live: false, responses: 134 }
 
   const isLive = data.is_live;
+  const competitionDate = data.competition_date;
+  const message = isLive
+  ? "Competitions are LIVE now!"
+  : `Competitions will be live ${competitionDate}`;
   console.log("Is live status:", isLive);
 })
 .catch(error => {
@@ -28,8 +33,8 @@ fetch("https://comp-0al6.onrender.com/status")
       {
         !isLive ? (
           <Routes>
-            <Route path="/" element={<NotLive />} />
-            <Route path="/leaderboard" element={<NotLive />} />
+            <Route path="/" element={<NotLive message={message}/>} />
+            <Route path="/leaderboard" element={<NotLive message={message}/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         ) : (

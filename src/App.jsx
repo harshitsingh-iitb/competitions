@@ -12,12 +12,16 @@ const isLive = false;
 function App() {
   // fetch("https://my-backend.onrender.com/status")
 fetch("https://comp-0al6.onrender.com/status")
-  .then(response => response.json())
-  .then(data => {
-    console.log(data); 
-  });
+.then(response => response.json())
+.then(data => {
+  console.log(data); // { days_left: 11, is_live: false, responses: 134 }
+
   const isLive = data.is_live;
-  console.log("Is live status:", isLive); 
+  console.log("Is live status:", isLive);
+})
+.catch(error => {
+  console.error("Error fetching status:", error);
+});
   return (
     <Router>
       <ScrollToTop />

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Calendar, Trophy, Users } from 'lucide-react';
+import { useState } from "react";
 import competitions from '../data/competitions-list'; // Competitions data import
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import ShinyButton from '../components/shinyButton'; // Importing the shiny button component
+import GradientText from '../components/gradientText';
 
 
 // Hero Section Component
@@ -13,7 +16,9 @@ const HeroSection = () => {
       <div className="relative max-w-4xl mx-auto text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            <GradientText colors={["#3b82f6", "#8b5cf6", "#ec4899","#3b82f6"]} className="text-5xl md:text-7xl">
             Discover Real World 
+            </GradientText>
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Challenges
             </span>
@@ -44,9 +49,9 @@ const HeroSection = () => {
 };
 
 // Competition Card Component
-const CompetitionCard = ({ competition }) => {
+const CompetitionCard = ({ competition,isBlurred }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 p-6 border border-gray-100 group">
+    <div className={`bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(217,176,255,0.7)] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover:-translate-y-2 p-6 border border-gray-100 group ${isBlurred ? "blur-sm opacity-50" : "blur-0 opacity-100"}`}>
       <div className="mb-4">
         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
           {competition.name}
@@ -62,9 +67,10 @@ const CompetitionCard = ({ competition }) => {
           <span>{competition.deadline}</span>
         </div>
         <a href={`/${competition.slug}`}>
-        <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-200 hover:shadow-lg transform hover:scale-105">
+        <ShinyButton name="View Details" />
+        {/* <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-200 hover:shadow-lg transform hover:scale-105">
           View Details
-        </button>
+        </button> */}
         </a>
       </div>
     </div>
@@ -73,6 +79,7 @@ const CompetitionCard = ({ competition }) => {
 
 // Competition Listing Component
 const CompetitionListing = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -89,8 +96,8 @@ const CompetitionListing = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {competitions.map((competition, index) => (
-            <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              <CompetitionCard competition={competition} />
+            <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+              <CompetitionCard competition={competition} isBlurred={hoveredIndex !== null && hoveredIndex !== index}/>
             </div>
           ))}
         </div>
@@ -102,7 +109,7 @@ const CompetitionListing = () => {
 // Footer Component
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#000000] z-10 text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <div className="mb-8">

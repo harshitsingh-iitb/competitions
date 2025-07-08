@@ -7,6 +7,7 @@ import Leaderboard from './pages/leaderboard';
 import NotLive from './pages/notLive';
 import NotFound from './pages/notFound';
 
+
 const isLive = false; 
 function App() {
   return (

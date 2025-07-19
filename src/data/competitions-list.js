@@ -1,16 +1,17 @@
 const competitions = [
   {
     "id": 1,
-    "name": "Problem Hunter",
-    "slug": "problem-hunter",
-    "description": "In this challenge, participants become investigative problem-solvers by identifying, researching, and validating real problems within their campus or student community. They will start by observing daily frustrations, inefficiencies, or unmet needs in their environment, then dive deep into understanding the problem through systematic research. Using survey methodology and direct student interviews, they will gather quantitative and qualitative data from at least 50 students to validate whether the problem is widespread and significant enough to warrant a solution. The final deliverable will be a comprehensive problem validation report that includes the problem statement, research methodology, data analysis, market size estimation, and recommendations for potential solutions. This project simulates the crucial first step of any successful venture: identifying a problem worth solving.",
-    "input": "Campus/student environment observation, Survey design methodology, Interview techniques",
-    "goals": "This challenge teaches students to develop critical problem-identification skills essential for entrepreneurship and innovation. By conducting systematic research and validation, students learn to distinguish between personal frustrations and market-worthy problems. They gain experience in survey design, data collection, and analysis while developing an understanding of market research fundamentals. The project prepares them to think like entrepreneurs by focusing on customer needs rather than solutions, and builds confidence in their ability to gather and interpret real-world data for decision-making.",
+    "name": "Black Box Buyout",
+    "slug": "black-box-buyout",
+    "description": "In this high-stakes private equity challenge, participants act as a solo GP at a lower-middle-market buyout fund. With no provided materials, they must independently source a real company, build a compelling investment thesis, structure a buyout deal, create a post-acquisition value plan, and propose a realistic exit strategy. There is no interaction, no guidance, and no room for error. This challenge simulates the ambiguity and pressure of real-world private equity where winners are defined by clarity of thought, strategic edge, and operator-level thinking. Competitors must demonstrate full-stack deal execution capabilities from sourcing to sale.",
+    "input": "Public company databases, business-for-sale platforms, press releases, Google search, industry reports, deal comps, LBO modeling skills, financial analysis",
+    "goals": "This challenge forces participants to think and act like a real private equity fund. It develops core skills such as sourcing credible targets, forming defensible investment theses, structuring deals, operational strategy, and exit planning — all under strict constraints. It filters for those who understand not just the numbers, but the psychology, pressure, and timing of real PE deals.",
     "submitLink": "",
-    "brief": "Identify and validate a real campus problem through systematic research with 50+ students.",
+    "brief": "Source a real company, build a full PE deal thesis, structure, and exit strategy. Submit a full investment memo, model, and supporting documentation.",
     "deadline": "30th July 2025",
-    "output": "A Google Drive folder containing: Problem validation report (PDF), Survey responses (spreadsheet), Interview recordings/transcripts, Data analysis charts, Market size estimation, Proposed solution recommendations"
-  },
+    "output": "A Google Drive folder containing: Target summary (PDF), Investment thesis (PDF, max 2 pages), Deal model (Excel), Term sheet (PDF), Value creation plan (PDF, max 2 pages), Exit plan (PDF), Risk appendix (optional, PDF)"
+  }
+  ,
   {
     "id": 2,
     "name": "Market Gap Analysis",

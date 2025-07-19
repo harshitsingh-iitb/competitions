@@ -5,7 +5,9 @@ import Navbar from '../components/Navbar';
 
 export default function CompetitionShowcase({ competition }) {
   const handleClick = () => {
-    window.open("https://forms.gle/smbwab1tpmZUfHpw6", "_blank");
+    // Show alert that submissions open 25th July
+    alert("Submissions will open 25th July.");
+    // window.open("https://forms.gle/smbwab1tpmZUfHpw6", "_blank");
 }
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">
@@ -15,11 +17,6 @@ export default function CompetitionShowcase({ competition }) {
       {/* Hero Section */}
       <header className="pt-24 pb-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-gradient-to-r from-purple-100 to-white rounded-full border border-purple-200">
-            <Award className="text-purple-600" size={24} />
-            <span className="text-purple-700 font-semibold text-lg">Featured Competition</span>
-          </div>
-          
           <h1   className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-800 via-purple-600 to-purple-900 bg-clip-text text-transparent mb-6 leading-tight">
             {competition.name}
           </h1>

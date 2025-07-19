@@ -8,25 +8,9 @@ import NotLive from './pages/notLive';
 import NotFound from './pages/notFound';
 
 
-const isLive = false;
+const isLive = true;
 const message = "Competitions will be live soon!";
 function App() {
-  // fetch("https://my-backend.onrender.com/status")
-fetch("https://comp-0al6.onrender.com/status")
-.then(response => response.json())
-.then(data => {
-  console.log(data); // { days_left: 11, is_live: false, responses: 134 }
-
-  const isLive = data.is_live;
-  const competitionDate = data.competition_date;
-  const message = isLive
-  ? "Competitions are LIVE now!"
-  : `Competitions will be live ${competitionDate}`;
-  console.log("Is live status:", isLive);
-})
-.catch(error => {
-  console.error("Error fetching status:", error);
-});
   return (
     <Router>
       <ScrollToTop />

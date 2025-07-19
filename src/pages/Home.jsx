@@ -12,7 +12,6 @@ import GradientText from '../components/gradientText';
 const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="relative max-w-4xl mx-auto text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
@@ -24,9 +23,6 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto font-bold">
-            9 elite challenges. One mission: win.
-            <br />
-            What you submit determines what happens next. 
             <br />
             You think you’ve got founder DNA?
             <br />

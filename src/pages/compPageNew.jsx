@@ -6,8 +6,8 @@ import Navbar from '../components/Navbar';
 export default function CompetitionShowcase({ competition }) {
   const handleClick = () => {
     // Show alert that submissions open 25th July
-    alert("Submissions will open 25th July.");
-    // window.open("https://forms.gle/smbwab1tpmZUfHpw6", "_blank");
+    // alert("Submissions will open 25th July.");
+    window.open("https://forms.gle/smbwab1tpmZUfHpw6", "_blank");
 }
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-100">

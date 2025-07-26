@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 export default function CompetitionShowcase({ competition }) {
   const handleClick = () => {
     // Show alert that submissions open 25th July
-    // alert("Submissions will open 25th July.");
+    // alert("Submissions will open 25th July.");ff
     window.open("https://forms.gle/smbwab1tpmZUfHpw6", "_blank");
 }
   return (
